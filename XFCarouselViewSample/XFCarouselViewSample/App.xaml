@@ -3,6 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XFCarouselViewSample.App">
     <Application.Resources>
+        <ResourceDictionary>
 
+
+            <!--  Color  -->
+            <Color x:Key="ColorPrimary">#E67E22</Color>
+            <Color x:Key="ColorBlack">#000000</Color>
+            <Color x:Key="ColorWhite">#FFFFFF</Color>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource ColorPrimary}" />
+                <Setter Property="BarTextColor" Value="{StaticResource ColorWhite}" />
+            </Style>
+
+            <Style TargetType="IndicatorView">
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="IndicatorSize" Value="10"/>
+            </Style>
+
+             <Style TargetType="CarouselView">
+                 <Setter Property="HorizontalScrollBarVisibility" Value="Never"/>
+                 <Setter Property="VerticalScrollBarVisibility" Value="Never"/>
+            </Style>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

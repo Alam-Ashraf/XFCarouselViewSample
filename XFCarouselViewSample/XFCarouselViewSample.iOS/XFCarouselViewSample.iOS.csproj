@@ -123,8 +123,11 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -132,5 +135,14 @@
       <Project>{D65C3B64-27E7-4E58-B864-F323E0BFCA5A}</Project>
       <Name>XFCarouselViewSample</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gif4.gif" />
+    <BundleResource Include="Resources\gif5.gif" />
+    <BundleResource Include="Resources\img5.jpeg" />
+    <BundleResource Include="Resources\img6.jpg" />
+    <BundleResource Include="Resources\img7.jpg" />
+    <BundleResource Include="Resources\img8.jpeg" />
+    <BundleResource Include="Resources\img9.jpeg" />
   </ItemGroup>
 </Project>
